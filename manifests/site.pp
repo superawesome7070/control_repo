@@ -5,7 +5,7 @@ node 'master.puppet.vm' {
   include role::master_server
   file { '/root/README':
     ensure => file,
-    content => "The full qualified name is ${fqdn}\n"
+    content => "The fully qualified name is ${fqdn}.\n"
    }
 }
 
